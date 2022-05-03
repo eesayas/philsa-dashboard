@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "executives",
+  "info": {
+    "singularName": "executive",
+    "pluralName": "executives",
+    "displayName": "Executive",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Profile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Bio": {
+      "type": "richtext",
+      "required": true
+    },
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "President",
+        "President & Gala Chairperson",
+        "Gala Chairperson",
+        "Co-President",
+        "Vice President",
+        "Internal Director",
+        "External Director",
+        "Finance Director",
+        "Events Director",
+        "Communications & Design Director",
+        "Social Media Coordinator",
+        "Mentorship Coordinator",
+        "Junior Gala Chairperson",
+        "Website Coordinator"
+      ],
+      "required": true
+    },
+    "Year": {
+      "type": "string",
+      "required": true
+    },
+    "Rank": {
+      "type": "integer",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    }
+  }
+}

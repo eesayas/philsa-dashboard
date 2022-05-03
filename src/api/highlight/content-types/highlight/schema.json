@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "highlights",
+  "info": {
+    "singularName": "highlight",
+    "pluralName": "highlights",
+    "displayName": "Highlight",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event"
+    },
+    "Initiative": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::initiative.initiative"
+    },
+    "Executive": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::executive.executive"
+    },
+    "Rank": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perks",
+  "info": {
+    "singularName": "perk",
+    "pluralName": "perks",
+    "displayName": "Perk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Affiliate": {
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Deal": {
+      "type": "string"
+    }
+  }
+}
