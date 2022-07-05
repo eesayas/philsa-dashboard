@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "highlight_displays",
+  "info": {
+    "singularName": "highlight-display",
+    "pluralName": "highlight-displays",
+    "displayName": "Highlight Display",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "background": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
