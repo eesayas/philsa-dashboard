@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
       contentTypes: {
         executive: {
           field: "Slug",
-          references: "Name",
+          references: ["Name", "Year"],
         },
         initiative: {
           field: "Slug",
