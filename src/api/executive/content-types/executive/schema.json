@@ -29,7 +29,7 @@
     },
     "Bio": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "Role": {
       "type": "enumeration",
